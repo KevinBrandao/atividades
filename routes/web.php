@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::post('/', function () {
+        return view('hello');
+});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+// Route::get('/act', function () {
+//     return view('welcome1');
+// });
+Route::get('/pokemon/{nome}', function () {
+    return view('pokemon');
 });
