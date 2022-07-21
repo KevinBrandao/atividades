@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ComController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::post('/pokemon/{nome}', function () {
-        return view('pokemon');
-});
+
+Route::get('/c', [ComController::class, 'dbz']);
+
+
+// Route::post('/pokemon/{nome}', function () {
+//         return view('pokemon');
+// });
 
 // Route::get('/', function () {
 //         return view('index');

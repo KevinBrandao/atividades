@@ -6,11 +6,16 @@ use Illuminate\Http\Request;
 
 class ComController extends Controller
 {
-    public function index()
+    public function dbz()
     {
 
-          $nome = 'João Silva';
-          return view('pokemon', compact('nome'));
+         $energy = 8000;
+         return view('dbz', compact('energy'));
+        
+
+
+        //   $nome = 'João Silva';
+        //   return view('pokemon', compact('nome'));
 
     //    // $name = 'João Silva';
     //    // return view('index', compact('name'));

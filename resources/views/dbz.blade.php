@@ -8,6 +8,21 @@
 </head>
 <body>
     
-    <h1>"Mais de 8000!" , {{ $energy > 8000 }}</h1>
+    <form action="/c" method="POST">
+        @csrf
+        <input type="text" name="energy" placeholder="Digite um valor">
+
+
+            <button type="submit">Enviar</button>
+            @if ($energy > 800)
+            <h1>"Mais de 8000!"</h1>        
+            @else
+                <h1>"Inseto!"</h1>
+        
+            @endif
+    </form>
+            
+    
+    
 </body>
 </html>
