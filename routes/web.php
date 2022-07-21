@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::post('/', function () {
         return view('hello');
 });
+Route::post('/act', function () {
+    return view('act');
+});
 // Route::get('/', function () {
 //     return view('welcome');
 // });
