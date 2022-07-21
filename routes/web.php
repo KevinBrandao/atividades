@@ -14,18 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', function () {
-        return view('index');
+Route::post('/pokemon/{nome}', function () {
+        return view('pokemon');
 });
-Route::get('/act', function () {
-    return view('index');
-});
+
+// Route::get('/', function () {
+//         return view('index');
+// });
+// Route::get('/act', function () {
+//     return view('index');
+// });
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 // Route::get('/act', function () {
 //     return view('welcome1');
 // });
-Route::get('/pokemon/{nome}', function () {
-    return view('pokemon');
-});
