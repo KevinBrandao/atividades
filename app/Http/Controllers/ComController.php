@@ -8,10 +8,10 @@ class ComController extends Controller
 {
     public function index()
     {
-       // $name = 'João Silva';
-       // return view('index', compact('name'));
-        $energy = 8000;
-        return view('index', compact('energy'));
+    //    // $name = 'João Silva';
+    //    // return view('index', compact('name'));
+        // $energy = 8000;
+        // return view('index', compact('energy'));
         
     }
     
